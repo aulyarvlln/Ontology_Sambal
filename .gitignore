@@ -1,0 +1,6 @@
+OntologySambal/target/
+OntologySambal/nbproject/private/
+OntologySambal/nb-configuration.xml
+*.class
+*.log
+*.owl~

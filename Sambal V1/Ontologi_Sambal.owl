@@ -1,0 +1,978 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AlatUntuk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AlatUntuk">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DibuatDenganAlat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#PeralatanPembuatan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPedasDigunakanUntuk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPedasDigunakanUntuk">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanUntuk"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanBahanPedas"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPedas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPenyedapDari -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPenyedapDari">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanUntuk"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanBahanPenyedap"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPenyedap"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanUntuk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanUntuk">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanBahan"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanSambal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DibuatDenganAlat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DibuatDenganAlat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#PeralatanPembuatan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanDengan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanDengan">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanUntuk"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanUntuk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanUntuk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanUntuk">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanUntuk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MemilikiKepedasan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MemilikiKepedasan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TingkatKepedasan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanBahan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanBahan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanSambal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanBahanPedas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanBahanPedas">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanBahan"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPedas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanBahanPenyedap -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanBahanPenyedap">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanBahan"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPenyedap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanTeknik -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanTeknik">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikUntuk"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengolahan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanTeknikPemasakan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanTeknikPemasakan">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanTeknik"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPemasakanUntuk"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPemasakan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanTeknikPengawetan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanTeknikPengawetan">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanTeknik"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengawetanUntuk"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengawetan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanTeknikPenghancuran -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanTeknikPenghancuran">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MenggunakanTeknik"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPenghancuranUntuk"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPenghancuran"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPemasakanUntuk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPemasakanUntuk">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikUntuk"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPemasakan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengawetanUntuk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengawetanUntuk">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikUntuk"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengawetan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPenghancuranUntuk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPenghancuranUntuk">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikUntuk"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPenghancuran"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikUntuk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikUntuk">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengolahan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AsalDaerah -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AsalDaerah">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributSambal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributBahan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributBahan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanSambal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributSambal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributSambal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributTeknik -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributTeknik">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengolahan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#LamaProses -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#LamaProses">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributTeknik"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengolahan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#NamaAlat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#NamaAlat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#PeralatanPembuatan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#NamaBahan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#NamaBahan">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributBahan"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanSambal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#NamaSajian -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#NamaSajian">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanUntuk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#NamaSambal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#NamaSambal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributSambal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#NamaTeknik -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#NamaTeknik">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributTeknik"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengolahan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#RasaSambal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#RasaSambal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributSambal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TakaranBahan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TakaranBahan">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributBahan"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanSambal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeksturSambal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeksturSambal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributSambal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TingkatKepedasan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TingkatKepedasan">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributSambal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TingkatKepedasan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#WarnaSambal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#WarnaSambal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#AtributSambal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPedas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPedas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanSambal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPenyedap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPenyedap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanSambal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanSambal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanSambal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Bakar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Bakar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPemasakan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiBesar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiBesar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisCabai"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiGendot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiGendot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisCabai"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiKering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiKering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisCabai"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiKeriting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiKeriting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisCabai"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisCabai"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Cemilan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Cemilan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanUntuk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Diblender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Diblender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPenghancuran"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Dichopper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Dichopper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPenghancuran"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Digiling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Digiling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPenghancuran"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Diiris -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Diiris">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPenghancuran"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanUntuk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanUntuk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#KarakteristikSambal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Diulek -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Diulek">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPenghancuran"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Fermentasi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Fermentasi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengawetan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Goreng -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Goreng">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPemasakan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisCabai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisCabai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanPedas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#KarakteristikSambal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#KarakteristikSambal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Lalapan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Lalapan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanUntuk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MakananBerat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#MakananBerat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#DisajikanUntuk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Mentah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Mentah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPemasakan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#PedasSedang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#PedasSedang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TingkatKepedasan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#PeralatanPembuatan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#PeralatanPembuatan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#BahanSambal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Rebus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Rebus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPemasakan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalMatang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalMatang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalMentah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalMentah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SangatPedas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SangatPedas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TingkatKepedasan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SiramMinyakPanas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SiramMinyakPanas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPemasakan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPemasakan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPemasakan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengolahan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengawetan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengawetan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengolahan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPenghancuran -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPenghancuran">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengolahan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengolahan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TeknikPengolahan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#KarakteristikSambal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TidakPedas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TidakPedas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TingkatKepedasan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TingkatKepedasan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#TingkatKepedasan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#KarakteristikSambal"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiBesarMerah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiBesarMerah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiBesar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiKeritingHijau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiKeritingHijau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiKeriting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiKeritingMerah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiKeritingMerah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiKeriting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiMerahHijau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiMerahHijau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiBesar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawitHijau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawitHijau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawitMerah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawitMerah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawitPutih -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawitPutih">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Pisau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Pisau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#PeralatanPembuatan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalBajak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalBajak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalBalado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalBalado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalBledhek -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalBledhek">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalBrambangAsem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalBrambangAsem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalCengek -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalCengek">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalDabu-Dabu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalDabu-Dabu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalGamie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalGamie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalIkanRoa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalIkanRoa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalJakarta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalJakarta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalKemangi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalKemangi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalKemiri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalKemiri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalMatah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalMatah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+        <DibuatDenganAlat rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#Pisau"/>
+        <MenggunakanBahan rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawitHijau"/>
+        <MenggunakanBahan rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#CabaiRawitMerah"/>
+        <AsalDaerah rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bali</AsalDaerah>
+        <NamaSambal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sambal Matah</NamaSambal>
+        <RasaSambal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pedas Gurih</RasaSambal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalNanas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalNanas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalOncom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalOncom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalPere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalPere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalPetis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalPetis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalRebon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalRebon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalRebus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalRebus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalRujakMadura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalRujakMadura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalSate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalSate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTahu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTahu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTauco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTauco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTerasi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTerasi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTeriCabeHijau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTeriCabeHijau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTerongSantan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTerongSantan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTomat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTomat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTrancam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTrancam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTumpang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#SambalTumpang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aulia/ontologies/2026/8/untitled-ontology-4#JenisSambal"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
