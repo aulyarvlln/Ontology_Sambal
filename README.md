@@ -15,6 +15,6 @@ Model ontologi ini dibangun menggunakan **Protégé** dengan hierarki kelas utam
 * **`TeknikPengolahan`**: Mencakup *TeknikPemasakan*, *TeknikPenghancuran*, dan *TeknikPengawetan*.
 * **`KarakteristikSambal`**: Meliputi *DisajikanUntuk* (*MakananBerat*, *Cemilan*) dan *TingkatKepedasan*.
 
-## 🔗 Properti Ontologi
+## Properti Ontologi
 * **Object Properties**: Menghubungkan antar entitas, seperti `:DibuatDenganAlat`, `:MenggunakanBahanPedas`, `:MenggunakanTeknikPenghancuran`, dan `:DisajikanUntuk`.
 * **Data Properties**: Menyimpan atribut teks/nilai dari entitas, seperti `:NamaSambal`, `:AsalDaerah`, `:RasaSambal`, `:TeksturSambal`, dan `:WarnaSambal`.
