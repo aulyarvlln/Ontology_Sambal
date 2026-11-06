@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sambal Nusantara</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--maroon:#7d0d14;--red:#c4161c;--gold:#e8b04a;--bg:#fbf5f2;--ink:#2a1a18;--mute:#8a7370;--line:#eadfdb;--soft:#fdeceb}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;font-size:14px}
+h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif}
+.top{background:var(--maroon);background-image:radial-gradient(circle at 20px 20px,rgba(255,255,255,.07) 0 14px,transparent 15px),radial-gradient(circle at 60px 60px,rgba(255,255,255,.07) 0 14px,transparent 15px);background-size:80px 80px;color:#fff;padding:36px 60px 90px}
+.top-in{max-width:1330px;margin:auto;display:flex;align-items:center;gap:18px}
+.logo{width:62px;height:62px;border-radius:18px;background:rgba(255,255,255,.14);display:grid;place-items:center;font-size:28px}
+.top h1{margin:0;font-size:34px}
+.top p{margin:4px 0 0;color:#f3c9c9}
+.count{margin-left:auto;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);border-radius:14px;padding:10px 18px;display:flex;align-items:center;gap:10px}
+.count b{font-family:'Playfair Display',serif;color:var(--gold);font-size:30px}
+.count span{font-size:11px;letter-spacing:.06em;line-height:1.2}
+.wrap{max-width:1330px;margin:-62px auto 40px;padding:0 20px}
+.filters{background:#fff;border-radius:18px;padding:12px;display:flex;gap:8px;box-shadow:0 8px 26px rgba(80,10,10,.12)}
+.filters input,.filters select{width:100%;border:1px solid var(--line);background:#fcf8f6;border-radius:12px;padding:0 14px;height:54px;font:inherit;color:var(--ink)}
+.filters .f{flex:1;position:relative}
+.filters .f label{position:absolute;left:14px;top:9px;font-size:10px;font-weight:700;letter-spacing:.05em;color:var(--mute)}
+.filters .f select{padding-top:16px}
+.filters .f.search{flex:1.4}
+button.reset{background:var(--red);color:#fff;border:0;border-radius:12px;padding:0 22px;font:inherit;font-weight:700;cursor:pointer}
+.grid{display:grid;grid-template-columns:460px 1fr;gap:20px;margin-top:18px;align-items:start}
+.panel{background:#fff;border-radius:18px;box-shadow:0 2px 10px rgba(80,10,10,.06);overflow:hidden}
+.ph{display:flex;justify-content:space-between;align-items:center;padding:18px;border-bottom:1px solid var(--line)}
+.ph small{color:var(--red);font-weight:700;letter-spacing:.08em;font-size:10px}
+.ph h2{margin:2px 0 0;font-size:22px}
+.pill{background:#f5eceb;color:var(--mute);font-weight:700;font-size:12px;border-radius:20px;padding:6px 12px}
+#daftar{max-height:610px;overflow:auto;padding:12px}
+.card{display:flex;gap:12px;padding:10px;border:1px solid transparent;border-radius:14px;cursor:pointer;margin-bottom:6px;position:relative}
+.card:hover{background:#fff8f6}
+.card.on{background:var(--soft);border-color:#f2c9c6}
+.card.on:before{content:"";position:absolute;left:-1px;top:8px;bottom:8px;width:3px;background:var(--red);border-radius:3px}
+.thumb{width:92px;height:78px;border-radius:12px;flex:none;position:relative;overflow:hidden;background:linear-gradient(135deg,#b3261e,#7d0d14)}
+.thumb img,.hero img,.dish img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cb{flex:1;display:flex;flex-direction:column;justify-content:space-between;min-width:0}
+.cb h3{margin:0;font-size:17px}
+.loc{color:var(--mute);font-size:12px;margin-top:2px}
+.row{display:flex;justify-content:space-between;align-items:center}
+.tag{font-size:10px;font-weight:700;letter-spacing:.05em;border-radius:8px;padding:4px 9px;background:#f0e9e6;color:#6b5a56}
+.tag.mentah{background:#f6efc9;color:#7a6a14}
+.chilis{display:flex;gap:4px}
+.chili{width:13px;height:6px;border-radius:6px;background:#ddd0cd;transform:rotate(-35deg)}
+.chili.on{background:var(--red)}
+.empty{padding:40px 20px;text-align:center;color:var(--mute)}
+.hero{height:242px;position:relative;background:linear-gradient(135deg,#a3201b,#5a0a10);color:#fff;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(40,5,5,.9),rgba(40,5,5,.15))}
+.hero .in{position:absolute;left:30px;right:30px;bottom:22px;z-index:2}
+.badges{display:flex;gap:8px;margin-bottom:10px}
+.badge{font-size:11px;font-weight:700;border-radius:20px;padding:6px 12px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.25)}
+.badge.hot{background:var(--gold);color:#4a2d00;border-color:var(--gold)}
+.hero h2{margin:0;font-size:36px}
+.hero p{margin:6px 0 0;font-size:13px;color:#f4dada}
+.tabs{display:flex;gap:26px;padding:0 24px;border-bottom:1px solid var(--line);overflow:auto}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;font:inherit;font-weight:700;font-size:12px;color:var(--mute);padding:18px 0 14px;cursor:pointer;white-space:nowrap}
+.tabs button.on{color:var(--red);border-color:var(--red)}
+.body{padding:24px;min-height:260px}
+.cols{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:26px}
+.kv{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:12px}
+.kv span{color:var(--mute)} .kv b{text-align:right}
+.quote{background:var(--soft);border-radius:14px;padding:20px 22px;font-family:'Playfair Display',serif;font-weight:600;color:#6b2b2b;line-height:1.5;align-self:start}
+.sec{font-size:11px;font-weight:700;letter-spacing:.06em;color:#6b5a56;margin:0 0 10px}
+.chip{display:inline-block;border:1px solid var(--line);background:#fcf8f6;border-radius:20px;padding:7px 13px;margin:0 6px 8px 0;font-size:12px;font-weight:500}
+.chip.red{background:var(--soft);border-color:#f2c9c6;color:var(--red);font-weight:700}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.qty{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.qty div{background:#f8f3f1;border-radius:10px;padding:10px 12px;font-size:12px}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:16px 40px}
+.step{display:flex;gap:12px;align-items:flex-start;font-size:12.5px}
+.step i{flex:none;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:700;font-size:12px}
+.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tool{border:1px solid var(--line);border-radius:12px;padding:18px 8px;text-align:center;font-size:12px;font-weight:500}
+.tool b{display:block;font-size:22px;margin-bottom:6px}
+.dishes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.dish{height:116px;border-radius:14px;position:relative;overflow:hidden;background:linear-gradient(135deg,#d77a3a,#8a3a10)}
+.dish span{position:absolute;left:10px;bottom:8px;color:#fff;font-weight:700;font-size:12px;z-index:2;text-shadow:0 1px 4px rgba(0,0,0,.7)}
+table{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:12px}
+th{background:#f7ecea;text-align:left;padding:12px 16px;font-size:10px;letter-spacing:.06em;color:#6b5a56}
+td{padding:11px 16px;border-top:1px solid var(--line);font-family:ui-monospace,Consolas,monospace;font-size:11.5px;word-break:break-word}
+@media(max-width:980px){.grid{grid-template-columns:1fr}.filters{flex-wrap:wrap}.filters .f{flex:1 1 45%}.cols,.two,.steps{grid-template-columns:1fr}.tools,.dishes{grid-template-columns:1fr 1fr}.qty{grid-template-columns:1fr}.top{padding:28px 20px 90px}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="top-in">
+  <div class="logo">🌶️</div>
+  <div><h1>Semantic Web Sambal Nusantara</h1><p>Jelajahi ragam sambal dari seluruh Indonesia</p></div>
+  <div class="count"><b id="total">0</b><span>KOLEKSI<br>SAMBAL</span></div>
+</div></header>
+
+<div class="wrap">
+  <div class="filters">
+    <div class="f search"><input id="cari" placeholder="Cari..."></div>
+    <div class="f"><label>JENIS</label><select id="fJenis"></select></div>
+    <div class="f"><label>TINGKAT KEPEDASAN</label><select id="fPedas"></select></div>
+    <button class="reset" id="reset">↺ Reset</button>
+  </div>
+
+  <div class="grid">
+    <aside class="panel">
+      <div class="ph"><div><small>KOLEKSI PILIHAN</small><h2>Daftar Sambal</h2></div><span class="pill" id="hasil">0 hasil</span></div>
+      <div id="daftar"></div>
+    </aside>
+    <section class="panel" id="detail"><div class="empty">Pilih sambal di sebelah kiri</div></section>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const TABS = [['ringkasan','Ringkasan'],['bahan','Bahan'],['cara','Cara Membuat'],['alat','Alat & Teknik'],['sajian','Disajikan Dengan'],['rdf','Triple RDF']];
+let state = {id:null, tab:'ringkasan', detail:null, token:0};
+
+// nama sambal (di-slug) -> nama file foto asli di folder img
+const FOTO = {
+  'sambal-bajak':'bajak.jpg',
+  'sambal-bawang':'bawang.jpg',
+  'sambal-bledhek':'bledek.jpeg',
+  'sambal-brambang-asem':'brambang asem.jpg',
+  'sambal-cengek':'cengek.jpg',
+  'sambal-colo-colo':'colo-colo.jpg',
+  'sambal-dabu-dabu':'dabu dabu.jpg',
+  'sambal-gamie':'gamie.jpg',
+  'sambal-ganja':'ganja.webp',
+  'sambal-ijo':'ijo.jpg',
+  'sambal-ikan-roa':'ikan roa.jpg',
+  'sambal-jakarta':'jakarta.jpg',
+  'sambal-kecap':'kecap.jpg',
+  'sambal-kemangi':'kemangi.jpg',
+  'sambal-kemiri':'kemiri.webp',
+  'sambal-lado':'lado.jpg',
+  'sambal-matah':'matah.jpg',
+  'sambal-nanas':'nanas.jpg',
+  'sambal-oncom':'oncom.jpg',
+  'sambal-pete':'pete.jpg',
+  'sambal-petis':'petis.jpg',
+  'sambal-rebon':'rebon.jpg',
+  'sambal-rebus':'rebus.webp',
+  'sambal-rujak-madura':'rujakmadura.jpg',
+  'sambal-sate':'sate.jpg',
+  'sambal-tahu':'tahu.jpg',
+  'sambal-tauco':'tauco.jpg',
+  'sambal-terasi':'terasi.jpg',
+  'sambal-teri-cabai-hijau':'tericabehijau.jpg',
+  'sambal-terong-santan':'terongsantan.jpg',
+  'sambal-tomat':'tomat.jpg',
+  'sambal-trancam':'trancam.jpg',
+  'sambal-tumpang':'tumpang.jpg',
+  'sambal-woku':'woku.jpg'
+};
+const fotoUrl = nama => { const f = FOTO[slug(nama)]; return f ? 'img/' + encodeURIComponent(f) : ''; };
+const img = src => src ? `<img src="${src}" alt="" onerror="this.remove()">` : '';
+
+async function api(path, params={}) {
+  const q = new URLSearchParams();
+  Object.entries(params).forEach(([k,v]) => { if (v) q.set(k, v); });
+  const res = await fetch('api/' + path + (q.toString() ? '?' + q : ''));
+  if (!res.ok) throw new Error((await res.json()).error || res.status);
+  return res.json();
+}
+
+function fillSelect(el, items) {
+  el.innerHTML = '<option value="">Semua</option>' + items.map(o => `<option value="${esc(o.id)}">${esc(o.label)}</option>`).join('');
+}
+const chilis = n => '<span class="chilis">' + [1,2,3].map(i => `<i class="chili ${i<=n?'on':''}"></i>`).join('') + '</span>';
+
+async function init() {
+  const opsi = await api('opsi');
+  fillSelect($('fJenis'), opsi.jenis);
+  fillSelect($('fPedas'), opsi.pedas);
+  $('total').textContent = (await api('sambal')).length;
+  ['fJenis','fPedas'].forEach(id => $(id).addEventListener('change', loadList));
+  let t; $('cari').addEventListener('input', () => { clearTimeout(t); t = setTimeout(loadList, 250); });
+  $('reset').addEventListener('click', () => {
+    $('cari').value = ''; ['fJenis','fPedas'].forEach(id => $(id).value = '');
+    loadList();
+  });
+  loadList();
+}
+
+async function loadList() {
+    const data = await api('sambal', {
+    cari: $('cari').value, jenis: $('fJenis').value, pedas: $('fPedas').value
+    });
+  $('hasil').textContent = data.length + ' hasil';
+  if (!data.length) {
+    $('daftar').innerHTML = '<div class="empty">Tidak ada sambal yang cocok dengan filter.</div>';
+    $('detail').innerHTML = '<div class="empty">Tidak ada data</div>';
+    state.id = null; return;
+  }
+  if (!data.some(x => x.id === state.id)) state.id = data[0].id;
+  $('daftar').innerHTML = data.map(x => `
+    <div class="card ${x.id===state.id?'on':''}" data-id="${esc(x.id)}">
+      <div class="thumb">${img(fotoUrl(x.nama))}</div>
+      <div class="cb">
+        <div><h3>${esc(x.nama)}</h3><div class="loc">📍 ${esc(x.asal || '-')}</div></div>
+        <div class="row"><span class="tag ${x.jenis==='Mentah'?'mentah':''}">${esc(x.jenis.toUpperCase())}</span>${chilis(x.level)}</div>
+      </div>
+    </div>`).join('');
+  document.querySelectorAll('.card').forEach(c => c.addEventListener('click', () => { state.id = c.dataset.id; markActive(); loadDetail(); }));
+  loadDetail();
+}
+function markActive() {
+  document.querySelectorAll('.card').forEach(c => c.classList.toggle('on', c.dataset.id === state.id));
+}
+
+async function loadDetail() {
+  const my = ++state.token;
+  const d = await api('detail', {id: state.id});
+  if (my !== state.token) return;
+  state.detail = d;
+  renderDetail();
+}
+
+function renderDetail() {
+  const d = state.detail;
+  const desc = `Sambal ${d.jenis.toLowerCase()} khas ${d.asal || 'Nusantara'}` + (d.rasa ? ` dengan rasa ${d.rasa.toLowerCase()}.` : '.');
+  $('detail').innerHTML = `
+    <div class="hero">${img(fotoUrl(d.nama))}
+      <div class="in">
+        <div class="badges"><span class="badge">📍 ${esc((d.asal||'-').toUpperCase())}</span>${d.kepedasan ? `<span class="badge hot">🔥 ${esc(d.kepedasan.toUpperCase())}</span>` : ''}</div>
+        <h2>${esc(d.nama)}</h2><p>${esc(desc)}</p>
+      </div>
+    </div>
+    <div class="tabs">${TABS.map(([k,l]) => `<button data-t="${k}" class="${k===state.tab?'on':''}">${l}</button>`).join('')}</div>
+    <div class="body" id="tabBody"></div>`;
+  document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => { state.tab = b.dataset.t; renderDetail(); }));
+  $('tabBody').innerHTML = ({ringkasan, bahan, cara, alat, sajian, rdf})[state.tab](d);
+}
+
+const kv = (k,v) => `<div class="kv"><span>${k}</span><b>${esc(v || '-')}</b></div>`;
+const none = t => `<div class="empty" style="padding:20px">${t}</div>`;
+
+function ringkasan(d) {
+  return `<div class="cols">
+    <div>${kv('Rasa', d.rasa)}${kv('Warna', d.warna)}${kv('Asal daerah', d.asal)}</div>
+    <div>${kv('Tekstur', d.tekstur)}${kv('Lama proses', d.lama)}${kv('Jenis', d.jenis)}</div>
+    <div class="quote">${esc(d.teknikDesc || 'Data teknik belum diisi di ontologi.')}</div>
+  </div>`;
+}
+function bahan(d) {
+  const chips = (a, cls) => a.length ? a.map(x => `<span class="chip ${cls}">${esc(x)}</span>`).join('') : '<span class="loc">-</span>';
+  return `<div class="two">
+      <div><p class="sec">BAHAN PEDAS</p>${chips(d.bahanPedas,'red')}</div>
+      <div><p class="sec">BAHAN PENYEDAP</p>${chips(d.bahanPenyedap,'')}</div>
+    </div>
+    <p class="sec" style="margin-top:18px">TAKARAN</p>
+    <div class="qty">${d.takaran.map(x => `<div>${esc(x)}</div>`).join('') || none('Takaran belum ada')}</div>`;
+}
+function cara(d) {
+  if (!d.langkah.length) return none('Langkah pembuatan belum ada');
+  return `<div class="steps">${d.langkah.map((l,i) => `<div class="step"><i>${i+1}</i><div>${esc(l)}</div></div>`).join('')}</div>`;
+}
+function alat(d) {
+  return `<div class="two" style="grid-template-columns:2fr 1fr">
+    <div><p class="sec">ALAT</p><div class="tools">${d.alat.map(a => `<div class="tool"><b>🍴</b>${esc(a)}</div>`).join('') || none('-')}</div></div>
+    <div><p class="sec">TEKNIK UTAMA</p>${d.teknik.map(t => `<span class="chip red">${esc(t)}</span>`).join('') || '<span class="loc">-</span>'}</div>
+  </div>`;
+}
+function sajian(d) {
+  if (!d.sajian.length) return none('Belum ada data sajian');
+  return `<div class="dishes">${d.sajian.map(s => `<div class="dish">${img('img/sajian/' + slug(s.id) + '.jpg')}<span>${esc(s.id)}</span></div>`).join('')}</div>`;
+}
+function rdf(d) {
+  return `<table><thead><tr><th>SUBJEK</th><th>PREDIKAT</th><th>OBJEK</th></tr></thead><tbody>
+    ${d.triples.map(t => `<tr><td>${esc(t[0])}</td><td>${esc(t[1])}</td><td>${esc(t[2])}</td></tr>`).join('')}
+  </tbody></table>`;
+}
+
+init().catch(e => { document.body.insertAdjacentHTML('beforeend', '<pre style="color:#c00;padding:20px">Gagal load: ' + esc(e.message) + '</pre>'); });
+</script>
+</body>
+</html>
